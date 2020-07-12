@@ -1,0 +1,22 @@
+<testsuite failures="0" name="src/test/java/feature/dataManipulation.feature" skipped="0" tests="1" time="0.048942">
+  <testcase classname="src.test.java.feature.dataManipulation" name="1" time="0.048942">
+    <system-out>* def myJson = { foo: 'bar' } ............................................. passed
+* set myJson.foo = 'world' ................................................ passed
+* match myJson == { foo: 'world' } ........................................ passed
+* set myJson $.hey = 'ho' ................................................. passed
+* match myJson == { foo: 'world', hey: 'ho' } ............................. passed
+* set myJson.zee[0] = 5 ................................................... passed
+* match myJson == { foo: 'world', hey: 'ho', zee: [5] } ................... passed
+* set myJson.zee[] = 6 .................................................... passed
+* match myJson == { foo: 'world', hey: 'ho', zee: [5, 6] } ................ passed
+* set myJson.cat = { name: 'Billie' } ..................................... passed
+* match myJson == { foo: 'world', hey: 'ho', zee: [5, 6], cat: { name: 'Billie' } } . passed
+* match myJson == { cat: { name: 'Billie' }, hey: 'ho', foo: 'world', zee: [5, 6] } . passed
+* match myJson == { cat: '#ignore', hey: 'ho', foo: 'world', zee: [5, 6] } . passed
+* def foo = { hello: 'world', baz: 'ban' } ................................ passed
+* def bar = { baz: 'ban', hello: 'world' } ................................ passed
+* match foo == bar ........................................................ passed
+* def test = { foo: 'bar' } ............................................... passed
+* match test != { foo: 'baz' } ............................................ passed</system-out>
+  </testcase>
+</testsuite>

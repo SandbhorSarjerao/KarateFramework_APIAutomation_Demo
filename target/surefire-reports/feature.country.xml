@@ -1,0 +1,9 @@
+<testsuite failures="0" name="feature/country.feature" skipped="0" tests="1" time="3.87603">
+  <testcase classname="feature.country" name="Get List of all Countries in API" time="3.87603">
+    <system-out>* url 'https://restcountries.eu' .......................................... passed
+* header Accept = 'application/json' ...................................... passed
+Given path '/rest/v2/all' ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

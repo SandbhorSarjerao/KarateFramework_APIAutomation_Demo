@@ -1,0 +1,10 @@
+<testsuite failures="0" name="feature/generateToken.feature" skipped="0" tests="1" time="3.272263">
+  <testcase classname="feature.generateToken" name="Create a Token" time="3.272263">
+    <system-out>* url 'https://restful-booker.herokuapp.com' .............................. passed
+* header Content-Type = 'application/json' ................................ passed
+Given path '/auth' ........................................................ passed
+And request {"username" : "admin", "password" : "password123" } ........... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

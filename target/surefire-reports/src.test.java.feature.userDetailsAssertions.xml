@@ -1,0 +1,15 @@
+<testsuite failures="0" name="src/test/java/feature/userDetailsAssertions.feature" skipped="0" tests="1" time="6.355074">
+  <testcase classname="src.test.java.feature.userDetailsAssertions" name="List the User 2 all Details" time="6.355074">
+    <system-out>* url 'https://reqres.in' ................................................. passed
+* def expectedResult1 = read('../resources/user2Result.json') ............. passed
+Given path '/api/users/2' ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response == {"ad":{"company":"StatusCode Weekly","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.","url":"http:\/\/statuscode.org\/"},"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/s3.amazonaws.com\/uifaces\/faces\/twitter\/josephstein\/128.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"}} . passed
+And match response == expectedResult1 ..................................... passed
+Given def color = 'red ' .................................................. passed
+And def num = 5 ........................................................... passed
+Then assert color + num == 'red 5' ........................................ passed</system-out>
+  </testcase>
+</testsuite>

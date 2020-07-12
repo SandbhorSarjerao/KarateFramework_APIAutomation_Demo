@@ -13,8 +13,8 @@ function func(){
 		config.url = 'https://dev.in'
 	}
 	
-	var result = karate.callSingle('AccessTokenGeneration.feature')
-	config.authInfo = result
+//	var result = karate.callSingle('AccessTokenGeneration.feature')
+//	config.authInfo = result
 	
 	function fn() {
 		 }

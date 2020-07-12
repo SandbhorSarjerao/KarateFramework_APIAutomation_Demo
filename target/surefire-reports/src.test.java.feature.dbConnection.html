@@ -172,104 +172,32 @@
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def config = { username: 'root', password: 'password123', url: 'jdbc:mysql://localhost:3306/sarjeraodb', driverClassName: 'com.mysql.cj.jdbc.Driver' }</div>
-<div class="time-cell passed">0.000337</div>
-</div>
-<div class="preformatted">23:17:13.047 &lt;&lt; lock released, cached callSingle: AccessTokenGeneration.feature</div>
-<div class="step-row">
-<div class="step-cell passed">/Users/SARJERAO/eclipse-workspace-RESTAssured/KarateFramework_APIAutomation_Demo/src/test/java/feature/AccessTokenGeneration.feature</div>
-<div class="time-cell passed">3.781867</div>
-</div>
-<div class="scenario-steps-nested">
-<div class="step-row">
-<div class="step-cell passed">* url 'https://reqres.in'</div>
-<div class="time-cell passed">0.037553</div>
-</div>
-<div class="preformatted">23:17:08.340 &gt;&gt; lock acquired, begin callSingle: AccessTokenGeneration.feature</div>
-<div class="step-row">
-<div class="step-cell passed">Given path '/api/register'</div>
-<div class="time-cell passed">0.011763</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">And form field email = 'eve.holt@reqres.in'</div>
-<div class="time-cell passed">0.007172</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">And form field password = 'pistol'</div>
-<div class="time-cell passed">0.008239</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">When method POST</div>
-<div class="time-cell passed">3.635385</div>
-</div>
-<div class="preformatted">23:17:11.502 request:
-1 &gt; POST https://reqres.in/api/register
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 42
-1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
-email=eve.holt%40reqres.in&amp;password=pistol
-
-23:17:12.846 response time in milliseconds: 1341.38
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 5b14591f3f8201c4-SIN
-1 &lt; Connection: keep-alive
-1 &lt; Content-Length: 36
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sat, 11 Jul 2020 17:47:10 GMT
-1 &lt; Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d4110511370dc1461db63174906528b7f1594489630; expires=Mon, 10-Aug-20 17:47:10 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 03e0960785000001c4ed1f4200000001
-{"id":4,"token":"QpwL5tke4Pnpja7X4"}</div>
-<div class="step-row">
-<div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000045</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">Then print response</div>
-<div class="time-cell passed">0.034498</div>
-</div>
-<div class="preformatted">23:17:12.997 [print] {
-  "id": 4,
-  "token": "QpwL5tke4Pnpja7X4"
-}</div>
-<div class="step-row">
-<div class="step-cell passed">* def accessToken = response.token</div>
-<div class="time-cell passed">0.041847</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">Then print 'accessToken ===&gt; ',accessToken</div>
-<div class="time-cell passed">0.005365</div>
-</div>
-<div class="preformatted">23:17:13.044 [print] accessToken ===&gt;  QpwL5tke4Pnpja7X4</div>
+<div class="time-cell passed">0.000583</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def DbUtils = Java.type('feature.DbUtils')</div>
-<div class="time-cell passed">0.074712</div>
+<div class="time-cell passed">0.017643</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def db = new DbUtils(config)</div>
-<div class="time-cell passed">0.061172</div>
+<div class="time-cell passed">0.353963</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def names = db.readRows('select * from names')</div>
-<div class="time-cell passed">0.980461</div>
+<div class="time-cell passed">2.425983</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Then print '&lt;=== Names ===&gt; ',names</div>
-<div class="time-cell passed">0.033169</div>
+<div class="time-cell passed">0.026685</div>
 </div>
-<div class="preformatted">23:17:14.221 [print] &lt;=== Names ===&gt;  [
+<div class="preformatted">16:32:53.580 [print] &lt;=== Names ===&gt;  [
   {
     "id": 3,
     "name": "Shivajirao"
+  },
+  {
+    "id": 4,
+    "name": "Rao"
   },
   {
     "id": 101,
@@ -281,18 +209,39 @@ email=eve.holt%40reqres.in&amp;password=pistol
   }
 ]</div>
 <div class="step-row">
-<div class="step-cell failed">* def write = db.insertRow('INSERT INTO names (id,name) values(3,"Shivajirao")')</div>
-<div class="time-cell failed">1.159863</div>
-</div>
-<div class="preformatted">dbConnection.feature:15 - javascript evaluation failed: db.insertRow('INSERT INTO names (id,name) values(3,"Shivajirao")'), StatementCallback; SQL [INSERT INTO names (id,name) values(3,"Shivajirao")]; Duplicate entry '3' for key 'PRIMARY'; nested exception is java.sql.BatchUpdateException: Duplicate entry '3' for key 'PRIMARY'</div>
-<div class="step-row">
-<div class="step-cell skipped">* def namesData = db.readValue('select * from names')</div>
-<div class="time-cell skipped">0</div>
+<div class="step-cell passed">* def write = db.insertRow('INSERT INTO names (id,name) values(5,"SRao")')</div>
+<div class="time-cell passed">0.20812</div>
 </div>
 <div class="step-row">
-<div class="step-cell skipped">Then print '&lt;=== Names ===&gt; ',namesData</div>
-<div class="time-cell skipped">0</div>
+<div class="step-cell passed">* def namesData = db.readRows('select * from names')</div>
+<div class="time-cell passed">0.159321</div>
 </div>
+<div class="step-row">
+<div class="step-cell passed">Then print '&lt;=== Names ===&gt; ',namesData</div>
+<div class="time-cell passed">0.001084</div>
+</div>
+<div class="preformatted">16:32:53.955 [print] &lt;=== Names ===&gt;  [
+  {
+    "id": 3,
+    "name": "Shivajirao"
+  },
+  {
+    "id": 4,
+    "name": "Rao"
+  },
+  {
+    "id": 5,
+    "name": "SRao"
+  },
+  {
+    "id": 101,
+    "name": "Sarjerao"
+  },
+  {
+    "id": 102,
+    "name": "Navin"
+  }
+]</div>
 </div>
 </div>
 </body>

@@ -7,7 +7,7 @@ import com.intuit.karate.junit4.Karate;
 
 
 @RunWith(Karate.class)
-@KarateOptions(tags = {"~@ignore"})
+@KarateOptions(features = "classpath:feature", tags = {"~@ignore"})
 public class ApiTestRunner{
 	
 }

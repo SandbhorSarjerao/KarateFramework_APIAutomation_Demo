@@ -11,8 +11,10 @@ Feature: Connection to Database
 		Scenario: 
 			* def names = db.readRows('select * from names')
 			Then print '<=== Names ===> ',names
-			
-			* def write = db.insertRow('INSERT INTO names (id,name) values(3,"Shivajirao")')
-			* def namesData = db.readValue('select * from names')
+#			('DELETE FROM names WHERE id = 3')
+			* def write = db.insertRow('INSERT INTO names (id,name) values(6,"NRao")')
+			* def namesData = db.readRows('select * from names')
 			Then print '<=== Names ===> ',namesData
+			
+#     * db.cleanDatatable(“TRUNCATE sarjeraodb.names;”)			
 			

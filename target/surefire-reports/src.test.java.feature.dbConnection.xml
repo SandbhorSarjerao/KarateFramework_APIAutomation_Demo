@@ -1,17 +1,12 @@
-<testsuite failures="1" name="src/test/java/feature/dbConnection.feature" skipped="0" tests="1" time="2.309714">
-  <testcase classname="src.test.java.feature.dbConnection" name="1" time="2.309714">
-    <failure message="dbConnection.feature:15 - javascript evaluation failed: db.insertRow('INSERT INTO names (id,name) values(3,&quot;Shivajirao&quot;)'), StatementCallback; SQL [INSERT INTO names (id,name) values(3,&quot;Shivajirao&quot;)]; Duplicate entry '3' for key 'PRIMARY'; nested exception is java.sql.BatchUpdateException: Duplicate entry '3' for key 'PRIMARY'">* def config = { username: 'root', password: 'password123', url: 'jdbc:mysql://localhost:3306/sarjeraodb', driverClassName: 'com.mysql.cj.jdbc.Driver' } . passed
+<testsuite failures="0" name="src/test/java/feature/dbConnection.feature" skipped="0" tests="1" time="3.193382">
+  <testcase classname="src.test.java.feature.dbConnection" name="1" time="3.193382">
+    <system-out>* def config = { username: 'root', password: 'password123', url: 'jdbc:mysql://localhost:3306/sarjeraodb', driverClassName: 'com.mysql.cj.jdbc.Driver' } . passed
 * def DbUtils = Java.type('feature.DbUtils') .............................. passed
 * def db = new DbUtils(config) ............................................ passed
 * def names = db.readRows('select * from names') .......................... passed
 Then print '&lt;=== Names ===&gt; ',names ....................................... passed
-* def write = db.insertRow('INSERT INTO names (id,name) values(3,"Shivajirao")') . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: dbConnection.feature:15 - javascript evaluation failed: db.insertRow('INSERT INTO names (id,name) values(3,"Shivajirao")'), StatementCallback; SQL [INSERT INTO names (id,name) values(3,"Shivajirao")]; Duplicate entry '3' for key 'PRIMARY'; nested exception is java.sql.BatchUpdateException: Duplicate entry '3' for key 'PRIMARY'&#13;
-	at ✽.* def write = db.insertRow('INSERT INTO names (id,name) values(3,"Shivajirao")') (dbConnection.feature:15)&#13;
-
-* def namesData = db.readValue('select * from names') ..................... skipped
-Then print '&lt;=== Names ===&gt; ',namesData ................................... skipped</failure>
+* def write = db.insertRow('INSERT INTO names (id,name) values(5,"SRao")') . passed
+* def namesData = db.readRows('select * from names') ...................... passed
+Then print '&lt;=== Names ===&gt; ',namesData ................................... passed</system-out>
   </testcase>
 </testsuite>
