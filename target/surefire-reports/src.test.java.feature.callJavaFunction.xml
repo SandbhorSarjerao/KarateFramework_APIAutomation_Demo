@@ -1,0 +1,17 @@
+<testsuite failures="1" name="src/test/java/feature/callJavaFunction.feature" skipped="0" tests="1" time="0.064453">
+  <testcase classname="src.test.java.feature.callJavaFunction" name="Call Java Method" time="0.064453">
+    <failure message="callJavaFunction.feature:5 - javascript evaluation failed: Java.type('feature.JavaFunctions.java'), java.lang.ClassNotFoundException: feature.JavaFunctions.java">* def javaDemo = Java.type('feature.JavaFunctions.java') .................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: callJavaFunction.feature:5 - javascript evaluation failed: Java.type('feature.JavaFunctions.java'), java.lang.ClassNotFoundException: feature.JavaFunctions.java&#13;
+	at ✽.* def javaDemo = Java.type('feature.JavaFunctions.java') (callJavaFunction.feature:5)&#13;
+
+* def result = new javaDemo().nonStaticFunction("*** World! ***") ......... skipped
+Then print '*** Result-1 ===&gt; ',result .................................... skipped
+* def result2 = javaDemo.staticFunction("*** World! ***") ................. skipped
+Then print '*** Result-2 ===&gt; ',result2 ................................... skipped
+* def javaDemo2 = Java.type('feature.WriteData.java') ..................... skipped
+* def result3 = javaDemo2.writeData("") ................................... skipped
+* def result3 = javaDemo2.writeData("*** This is Third Line ***") ......... skipped</failure>
+  </testcase>
+</testsuite>

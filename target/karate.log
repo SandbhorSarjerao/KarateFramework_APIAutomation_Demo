@@ -1,0 +1,587 @@
+20:56:19.242 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:56:19.850 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: AccessTokenGeneration.feature
+20:56:23.205 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 42
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+email=eve.holt%40reqres.in&password=pistol
+
+20:56:24.812 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1602.80
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b138ad8ae5ef8f7-NRT
+1 < Connection: keep-alive
+1 < Content-Length: 36
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 11 Jul 2020 15:26:22 GMT
+1 < Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dba3eca503051478b32ca9ba688d412681594481181; expires=Mon, 10-Aug-20 15:26:21 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 03e0151b670000f8f7d58da200000001
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
+
+20:56:24.988 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "id": 4,
+  "token": "QpwL5tke4Pnpja7X4"
+}
+
+20:56:25.015 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] accessToken ===>  QpwL5tke4Pnpja7X4
+20:56:25.018 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - << lock released, cached callSingle: AccessTokenGeneration.feature
+20:56:25.379 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/feature/callJavaFunction.feature
+22:00:05.965 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+22:00:06.571 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: AccessTokenGeneration.feature
+22:00:09.428 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 42
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+email=eve.holt%40reqres.in&password=pistol
+
+22:00:14.413 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 4979.63
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b13e85e29d1a9a6-SIN
+1 < Connection: keep-alive
+1 < Content-Length: 36
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 11 Jul 2020 16:30:12 GMT
+1 < Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d21d3c4be6e496deb58280a2ab53409801594485012; expires=Mon, 10-Aug-20 16:30:12 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 03e04f8edd0000a9a69d3eb200000001
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
+
+22:00:14.577 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "id": 4,
+  "token": "QpwL5tke4Pnpja7X4"
+}
+
+22:00:14.627 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] accessToken ===>  QpwL5tke4Pnpja7X4
+22:00:14.629 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - << lock released, cached callSingle: AccessTokenGeneration.feature
+22:00:14.866 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users%3Fpage=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+22:00:15.481 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 611.99
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: REVALIDATED
+1 < CF-RAY: 5b13e8652a74c37c-SIN
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 11 Jul 2020 16:30:13 GMT
+1 < Etag: W/"301-ijGNEim/mAI7LpbQIXyQc2bjt+k"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d6612631d2d1ee8d49dba1c74b12069be1594485013; expires=Mon, 10-Aug-20 16:30:13 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 03e04f933b0000c37c56bdd200000001
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+22:00:15.495 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] *** reqresUrl Value ***  https://reqres.in
+22:00:15.500 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] authInfo ====>  {
+  "__arg": null,
+  "responseType": "json",
+  "responseHeaders": {
+    "Date": [
+      "Sat, 11 Jul 2020 16:30:12 GMT"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Content-Length": [
+      "36"
+    ],
+    "Connection": [
+      "keep-alive"
+    ],
+    "Set-Cookie": [
+      "__cfduid=d21d3c4be6e496deb58280a2ab53409801594485012; expires=Mon, 10-Aug-20 16:30:12 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ],
+    "Access-Control-Allow-Origin": [
+      "*"
+    ],
+    "Etag": [
+      "W/\"24-4iP0za1geN2he+ohu8F0FhCjLks\""
+    ],
+    "Via": [
+      "1.1 vegur"
+    ],
+    "CF-Cache-Status": [
+      "DYNAMIC"
+    ],
+    "cf-request-id": [
+      "03e04f8edd0000a9a69d3eb200000001"
+    ],
+    "Expect-CT": [
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+    ],
+    "Server": [
+      "cloudflare"
+    ],
+    "CF-RAY": [
+      "5b13e85e29d1a9a6-SIN"
+    ]
+  },
+  "responseTime": 4980,
+  "response": {
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+  },
+  "requestTimeStamp": 1594485009431,
+  "responseStatus": 200,
+  "accessToken": "QpwL5tke4Pnpja7X4",
+  "__loop": -1,
+  "responseCookies": {
+    "__cfduid": {
+      "name": "__cfduid",
+      "value": "d21d3c4be6e496deb58280a2ab53409801594485012",
+      "domain": "reqres.in",
+      "path": "/",
+      "expires": "1597077012000",
+      "persistent": "true",
+      "secure": "true"
+    }
+  }
+}
+
+22:00:15.545 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Access Token ====>  QpwL5tke4Pnpja7X4
+22:00:15.577 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Token ====>  QpwL5tke4Pnpja7X4
+22:00:15.597 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Response ID ====>  4
+22:00:15.633 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Content-Type ====> 
+22:00:15.655 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Connection ====>  [
+  "keep-alive"
+]
+
+22:00:15.685 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Response Time ====>  4980
+22:00:15.696 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Server ====>  [
+  "cloudflare"
+]
+
+22:00:15.990 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/feature/configJavaScript.feature
+22:01:31.214 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+22:01:31.756 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: AccessTokenGeneration.feature
+22:01:34.933 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 42
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+email=eve.holt%40reqres.in&password=pistol
+
+22:01:36.135 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1196.93
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b13ea5ce8c301c8-SIN
+1 < Connection: keep-alive
+1 < Content-Length: 36
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 11 Jul 2020 16:31:34 GMT
+1 < Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d83cc0ee833ddc1a9140248216528caf11594485093; expires=Mon, 10-Aug-20 16:31:33 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 03e050ce12000001c83809d200000001
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
+
+22:01:36.286 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "id": 4,
+  "token": "QpwL5tke4Pnpja7X4"
+}
+
+22:01:36.329 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] accessToken ===>  QpwL5tke4Pnpja7X4
+22:01:36.332 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - << lock released, cached callSingle: AccessTokenGeneration.feature
+22:01:36.454 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users%3Fpage=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+22:01:36.811 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 352.28
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 81
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 5b13ea639bd8dd1a-SIN
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 11 Jul 2020 16:31:34 GMT
+1 < Etag: W/"301-ijGNEim/mAI7LpbQIXyQc2bjt+k"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d497f897a32975d18cf185be50e568fc41594485094; expires=Mon, 10-Aug-20 16:31:34 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 03e050d23f0000dd1af2354200000001
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+22:01:36.834 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] *** reqresUrl Value ***  https://reqres.in
+22:01:36.844 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] authInfo ====>  {
+  "__arg": null,
+  "responseType": "json",
+  "responseHeaders": {
+    "Date": [
+      "Sat, 11 Jul 2020 16:31:34 GMT"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Content-Length": [
+      "36"
+    ],
+    "Connection": [
+      "keep-alive"
+    ],
+    "Set-Cookie": [
+      "__cfduid=d83cc0ee833ddc1a9140248216528caf11594485093; expires=Mon, 10-Aug-20 16:31:33 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ],
+    "Access-Control-Allow-Origin": [
+      "*"
+    ],
+    "Etag": [
+      "W/\"24-4iP0za1geN2he+ohu8F0FhCjLks\""
+    ],
+    "Via": [
+      "1.1 vegur"
+    ],
+    "CF-Cache-Status": [
+      "DYNAMIC"
+    ],
+    "cf-request-id": [
+      "03e050ce12000001c83809d200000001"
+    ],
+    "Expect-CT": [
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+    ],
+    "Server": [
+      "cloudflare"
+    ],
+    "CF-RAY": [
+      "5b13ea5ce8c301c8-SIN"
+    ]
+  },
+  "responseTime": 1197,
+  "response": {
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+  },
+  "requestTimeStamp": 1594485094936,
+  "responseStatus": 200,
+  "accessToken": "QpwL5tke4Pnpja7X4",
+  "__loop": -1,
+  "responseCookies": {
+    "__cfduid": {
+      "name": "__cfduid",
+      "value": "d83cc0ee833ddc1a9140248216528caf11594485093",
+      "domain": "reqres.in",
+      "path": "/",
+      "expires": "1597077093000",
+      "persistent": "true",
+      "secure": "true"
+    }
+  }
+}
+
+22:01:36.868 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Access Token ====>  QpwL5tke4Pnpja7X4
+22:01:36.887 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Token ====>  QpwL5tke4Pnpja7X4
+22:01:36.917 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Response ID ====>  4
+22:01:36.943 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Connection ====>  [
+  "keep-alive"
+]
+
+22:01:36.971 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Response Time ====>  1197
+22:01:36.998 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Server ====>  [
+  "cloudflare"
+]
+
+22:01:37.315 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/feature/configJavaScript.feature
+23:08:40.276 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:08:40.891 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: AccessTokenGeneration.feature
+23:08:44.923 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 42
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+email=eve.holt%40reqres.in&password=pistol
+
+23:08:46.462 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1536.30
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b144cc1bfda9479-NRT
+1 < Connection: keep-alive
+1 < Content-Length: 36
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 11 Jul 2020 17:38:44 GMT
+1 < Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d9807b3868d98453238baa9854b9fb2f51594489124; expires=Mon, 10-Aug-20 17:38:44 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 03e08e4d100000947936012200000001
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
+
+23:08:46.606 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "id": 4,
+  "token": "QpwL5tke4Pnpja7X4"
+}
+
+23:08:46.659 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] accessToken ===>  QpwL5tke4Pnpja7X4
+23:08:46.663 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - << lock released, cached callSingle: AccessTokenGeneration.feature
+23:08:47.042 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/feature/dbConnection.feature
+23:11:06.432 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:11:06.975 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: AccessTokenGeneration.feature
+23:11:10.714 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 42
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+email=eve.holt%40reqres.in&password=pistol
+
+23:11:13.032 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 2315.10
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b145055bc17ef59-NRT
+1 < Connection: keep-alive
+1 < Content-Length: 36
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 11 Jul 2020 17:41:11 GMT
+1 < Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d61b0aa746f606e5ecb4d3fe447c1c2fd1594489270; expires=Mon, 10-Aug-20 17:41:10 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 03e090898f0000ef59e693d200000001
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
+
+23:11:13.195 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "id": 4,
+  "token": "QpwL5tke4Pnpja7X4"
+}
+
+23:11:13.261 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] accessToken ===>  QpwL5tke4Pnpja7X4
+23:11:13.265 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - << lock released, cached callSingle: AccessTokenGeneration.feature
+23:11:13.438 [ForkJoinPool-1-worker-1] INFO  feature.DbUtils - init jdbc template: jdbc:mysql://localhost:3306/sarjeraodb
+23:11:14.824 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Names ===>  [
+  {
+    "id": 101,
+    "name": "Sarjerao"
+  },
+  {
+    "id": 102,
+    "name": "Navin"
+  }
+]
+
+23:11:15.035 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/feature/dbConnection.feature
+23:14:14.680 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:14:15.233 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: AccessTokenGeneration.feature
+23:14:19.558 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 42
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+email=eve.holt%40reqres.in&password=pistol
+
+23:14:20.829 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1266.58
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b1454ebed3401c0-SIN
+1 < Connection: keep-alive
+1 < Content-Length: 36
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 11 Jul 2020 17:44:18 GMT
+1 < Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d99474c8c9e02a1be94277c85b2b5d4941594489458; expires=Mon, 10-Aug-20 17:44:18 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 03e093676e000001c03020f200000001
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
+
+23:14:21.061 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "id": 4,
+  "token": "QpwL5tke4Pnpja7X4"
+}
+
+23:14:21.098 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] accessToken ===>  QpwL5tke4Pnpja7X4
+23:14:21.102 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - << lock released, cached callSingle: AccessTokenGeneration.feature
+23:14:21.380 [ForkJoinPool-1-worker-1] INFO  feature.DbUtils - init jdbc template: jdbc:mysql://localhost:3306/sarjeraodb
+23:14:22.541 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Names ===>  [
+  {
+    "id": 101,
+    "name": "Sarjerao"
+  },
+  {
+    "id": 102,
+    "name": "Navin"
+  }
+]
+
+23:14:24.064 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/feature/dbConnection.feature
+23:15:12.580 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:15:13.141 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: AccessTokenGeneration.feature
+23:15:17.113 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 42
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+email=eve.holt%40reqres.in&password=pistol
+
+23:15:18.297 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1180.49
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b1456534e36a95e-SIN
+1 < Connection: keep-alive
+1 < Content-Length: 36
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 11 Jul 2020 17:45:16 GMT
+1 < Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=da0e96cb1195266d825c0289bb0a34a621594489516; expires=Mon, 10-Aug-20 17:45:16 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 03e09448110000a95e5a318200000001
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
+
+23:15:18.457 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "id": 4,
+  "token": "QpwL5tke4Pnpja7X4"
+}
+
+23:15:18.516 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] accessToken ===>  QpwL5tke4Pnpja7X4
+23:15:18.519 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - << lock released, cached callSingle: AccessTokenGeneration.feature
+23:15:18.691 [ForkJoinPool-1-worker-1] INFO  feature.DbUtils - init jdbc template: jdbc:mysql://localhost:3306/sarjeraodb
+23:15:19.681 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Names ===>  [
+  {
+    "id": 101,
+    "name": "Sarjerao"
+  },
+  {
+    "id": 102,
+    "name": "Navin"
+  }
+]
+
+23:15:20.032 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Names ===>  [
+  {
+    "id": 101,
+    "name": "Sarjerao"
+  },
+  {
+    "id": 102,
+    "name": "Navin"
+  }
+]
+
+23:15:20.246 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/feature/dbConnection.feature
+23:17:07.757 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:17:08.336 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: AccessTokenGeneration.feature
+23:17:11.501 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 42
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+email=eve.holt%40reqres.in&password=pistol
+
+23:17:12.845 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1341.38
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b14591f3f8201c4-SIN
+1 < Connection: keep-alive
+1 < Content-Length: 36
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 11 Jul 2020 17:47:10 GMT
+1 < Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d4110511370dc1461db63174906528b7f1594489630; expires=Mon, 10-Aug-20 17:47:10 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 03e0960785000001c4ed1f4200000001
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
+
+23:17:12.996 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "id": 4,
+  "token": "QpwL5tke4Pnpja7X4"
+}
+
+23:17:13.044 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] accessToken ===>  QpwL5tke4Pnpja7X4
+23:17:13.047 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - << lock released, cached callSingle: AccessTokenGeneration.feature
+23:17:13.207 [ForkJoinPool-1-worker-1] INFO  feature.DbUtils - init jdbc template: jdbc:mysql://localhost:3306/sarjeraodb
+23:17:14.220 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] <=== Names ===>  [
+  {
+    "id": 3,
+    "name": "Shivajirao"
+  },
+  {
+    "id": 101,
+    "name": "Sarjerao"
+  },
+  {
+    "id": 102,
+    "name": "Navin"
+  }
+]
+
+23:17:15.613 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/feature/dbConnection.feature
