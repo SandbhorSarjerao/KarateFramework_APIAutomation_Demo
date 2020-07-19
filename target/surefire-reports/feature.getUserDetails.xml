@@ -1,9 +1,0 @@
-<testsuite failures="0" name="feature/getUserDetails.feature" skipped="0" tests="1" time="2.779176">
-  <testcase classname="feature.getUserDetails" name="List the User-1 Details" time="2.779176">
-    <system-out>* url 'https://reqres.in' ................................................. passed
-Given path '/api/users/1' ................................................. passed
-When method get ........................................................... passed
-Then status 200 ........................................................... passed
-And assert response.data.id == 1 .......................................... passed</system-out>
-  </testcase>
-</testsuite>
