@@ -1,78 +1,83 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>KarateFramework_API_Demo</groupId>
-  <artifactId>KarateFramework_API_Demo</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+	<groupId>KarateFramework_API_Demo</groupId>
+	<artifactId>KarateFramework_API_Demo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 
-  <name>KarateFramework_API_Demo</name>
-  <url>http://maven.apache.org</url>
+	<name>KarateFramework_API_Demo</name>
+	<url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 
-  <dependencies>
-    	<dependency>
-    		<groupId>com.intuit.karate</groupId>
-   		 	<artifactId>karate-apache</artifactId>
-    		<version>0.9.5</version>
-    		<scope>test</scope>
+	<dependencies>
+		<dependency>
+			<groupId>com.intuit.karate</groupId>
+			<artifactId>karate-apache</artifactId>
+			<version>0.9.5</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
-		    <groupId>com.intuit.karate</groupId>
-		    <artifactId>karate-junit4</artifactId>
-		    <version>0.9.5</version>
-		    <scope>test</scope>
+			<groupId>com.intuit.karate</groupId>
+			<artifactId>karate-junit4</artifactId>
+			<version>0.9.5</version>
+			<scope>test</scope>
 		</dependency>
 
 		<dependency>
-		    <groupId>net.masterthought</groupId>
-		    <artifactId>cucumber-reporting</artifactId>
-		    <version>3.8.0</version>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>3.8.0</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
 		<dependency>
-		    <groupId>org.springframework</groupId>
-		    <artifactId>spring-jdbc</artifactId>
-		    <version>5.2.7.RELEASE</version>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>5.2.7.RELEASE</version>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
-		    <groupId>mysql</groupId>
-		    <artifactId>mysql-connector-java</artifactId>
-		    <version>8.0.20</version>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.20</version>
 		</dependency>
-				
-		
-  </dependencies>
-  
-  <build>
-  	<testResources>
-  		<testResource>
-  			<directory>src/test/java</directory>
-  			<excludes>
-  				<exclude>**/*.java</exclude>
-  			</excludes>
-  		</testResource>
-  	</testResources>
-  	
-  	<plugins>
-  
-      	<plugin>
-	        <groupId>org.apache.maven.plugins</groupId>
-	        <artifactId>maven-surefire-plugin</artifactId>
-	        <version>2.10</version>
-	        <configuration>
-	            <argLine>-Dfile.encoding=UTF-8</argLine>
-	        </configuration>
-    	</plugin>
-  	</plugins>  
-  		
-  </build>
-  
+
+
+	</dependencies>
+
+	<build>
+		<testResources>
+			<testResource>
+				<directory>src/test/java</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</testResource>
+		</testResources>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.10</version>
+				<configuration>
+					<argLine>-Dfile.encoding=UTF-8</argLine>
+
+					<systemProperties>
+						<karate.options>--tags ~@ignore</karate.options>
+					</systemProperties>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
+
 </project>
