@@ -9,7 +9,9 @@ Feature: API Authentication
 		"""
 		{
 			'email' : 'eve.holt@reqres.in',
-			'password' : 'pistol'
+			'password' : 'pistol',
+			'grant_type': 'client_credentials',
+			'client_secret': ''
 		}
 		"""
 

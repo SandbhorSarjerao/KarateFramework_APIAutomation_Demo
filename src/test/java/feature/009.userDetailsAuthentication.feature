@@ -10,10 +10,8 @@ Feature: API Authentication
 		And form field password = 'pistol'
 		When method POST
 		Then status 200
-		Then print response
-		
+		And print '<=== Response ===>',response
+				
 		* def accessToken = response.token
 		Then print 'accessToken ===> ',accessToken
-		
-	
 		

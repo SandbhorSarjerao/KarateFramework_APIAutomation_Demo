@@ -24,6 +24,11 @@ Feature: Check returned Users Details by the API
 		And match response.data.id == 2
 		And assert response.data.id == 2
 		And match response.data.last_name != null
+		
+		# Verify whether job_code field is NOT present in Response
+		* def job_code = response.data.job_code
+		And match job_code == null
+
 
 	Scenario: List User-3 all Details
 		Given path '/api/users/3'
@@ -42,3 +47,9 @@ Feature: Check returned Users Details by the API
 		And match response == expectedResult3[2]
 #		And match response.data[*].id contains [1,2,3]
 #		And match response..id contains [1,2,3]	
+
+
+
+
+
+

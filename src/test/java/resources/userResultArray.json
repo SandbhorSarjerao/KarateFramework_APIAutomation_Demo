@@ -42,5 +42,20 @@
     "url": "http://statuscode.org/",
     "text": "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."
   }
+},
+
+{
+  "data": {
+    "last_name": "Holt",
+    "id": 4,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg",
+    "first_name": "Eve",
+    "email": "eve.holt@reqres.in"
+  },
+  "ad": {
+    "company": "StatusCode Weekly",
+    "text": "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.",
+    "url": "http://statuscode.org/"
+  }
 }
 ]
