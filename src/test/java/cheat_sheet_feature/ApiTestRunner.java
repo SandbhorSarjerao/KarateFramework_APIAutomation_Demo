@@ -33,9 +33,12 @@ public class ApiTestRunner {
     private static void generateReport(String karateOutputPath) {
         Collection jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[] {"json"}, true);
         List jsonPaths = new ArrayList(jsonFiles.size());
+        jsonFiles.forEach(file -> jsonPaths.add(((File) file).getAbsolutePath()));
+        /*
         for (File file : jsonFiles) {
             jsonPaths.add(file.getAbsolutePath());
         }
+        */
         Configuration config = new Configuration(new File("target"), "YOUR PROJECT NAME");
         config.addClassifications("Environment", System.getProperty("karate.env"));
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);

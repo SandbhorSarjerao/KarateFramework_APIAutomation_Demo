@@ -1,4 +1,4 @@
-@ignore
+@ignore @RegressionTest
 Feature: Check returned Users Details by the API
 	
 	Background:

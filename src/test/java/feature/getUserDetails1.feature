@@ -39,6 +39,6 @@ Feature: Check returned Users Details by the API
 		When method get
 		Then status 200
 		And print response
-		And match response == expectedResult3[1]
+		And match response == expectedResult3[2]
 #		And match response.data[*].id contains [1,2,3]
 #		And match response..id contains [1,2,3]	
