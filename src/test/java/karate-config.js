@@ -38,11 +38,11 @@ function func() {
 	} else if (env == 'dev') {
 		config.url = 'https://dev.in'
 	} else if(env == 'qa') {
-	    config.AM_USERNAME: 'myUserName'
-	        config.AM_PASSWORD: 'myPa55word'
+	    config.AM_USERNAME= 'myUserName';
+	        config.AM_PASSWORD= 'myPa55word';
 	} else if(env == 'live') {
-	            config.AM_USERNAME: 'admin'
-	            config.AM_PASSWORD: 'secret'
+	            config.AM_USERNAME= 'admin';
+	            config.AM_PASSWORD= 'secret';
 	}
 
 	// var result = karate.callSingle('AccessTokenGeneration.feature')
