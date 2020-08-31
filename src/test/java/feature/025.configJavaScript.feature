@@ -9,7 +9,7 @@ Feature: User Details
 		Given path '/api/users?page=2'
 		When method GET
 		Then status 200
-#		And print response
+		And print response
 		And match response == expectedOutput
 #		And print '*** reqresUrl Value *** ',reqresUrl
 #		And print '<=== authInfo ====> ',authInfo

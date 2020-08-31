@@ -15,6 +15,7 @@ Feature: Check returned Users Details by the API
 		* def myFunction = function(){ return 'Hello World!...'}
 		* def functionReturnedData = call myFunction
 		Then print 'Function Returned Data ===> ',functionReturnedData
+		
 		* def myFunction1 = 
 		"""
 		function(){
@@ -31,6 +32,6 @@ Feature: Check returned Users Details by the API
 		}
 		"""
 		* def result = sum(2,3)
-		And print result 
+		And print 'Result ===>',result 
 		
 		

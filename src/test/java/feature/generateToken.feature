@@ -1,3 +1,4 @@
+@ignore
 Feature: Check Generated Token by API
 
 	Background: 

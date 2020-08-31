@@ -1,3 +1,4 @@
+@ignore
 Feature: add product and verify it
 
   Background:

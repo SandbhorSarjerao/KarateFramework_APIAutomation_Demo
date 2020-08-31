@@ -11,10 +11,18 @@ Feature: Connection to Database
 		Scenario: 
 			* def names = db.readRows('select * from names')
 			Then print '<=== Names ===> ',names
-#			('DELETE FROM names WHERE id = 3')
-			* def write = db.insertRow('INSERT INTO names (id,name) values(6,"NRao")')
+			
+			* def write = db.deleteRow('DELETE FROM names WHERE id = 7')
+			Then print "Deleted Row does NOT exist ===>",db.readRows('select * from names WHERE id = 7')
+			* def names = db.readRows('select * from names')
+			Then print '<=== Names ===> ',names
+			
+			* def write = db.insertRow('INSERT INTO names (id,name) values(7,"SNRao")')
+			Then print "Inserted Row ===>",db.readRows('select * from names WHERE id = 7')
 			* def namesData = db.readRows('select * from names')
 			Then print '<=== Names ===> ',namesData
+			
+			
 			
 #     * db.cleanDatatable(“TRUNCATE sarjeraodb.names;”)			
 			

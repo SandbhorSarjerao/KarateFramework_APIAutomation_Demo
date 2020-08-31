@@ -3,7 +3,7 @@ Feature: Call to Toekn Generation Feature for API Authentication
 
 	Background:
 		* url 'https://reqres.in'
-		* def myFeature = call read('AccessTokenGeneration.feature')
+		* def myFeature = call read('011.AccessTokenGeneration.feature') {email: 'eve.holt@reqres.in', password: 'pistol'}
 		* def authToken = myFeature.accessToken
 		
 		
@@ -20,13 +20,18 @@ Feature: Call to Toekn Generation Feature for API Authentication
 		* def myFunction = 
 		"""
 		function(arg){
-			for(i=0; i<arg.length; i++){
-				if(arg[i].id==6){
-					return arg[i]
-				}
-			}
+			return arg.length
 		}
 		"""
-		* def UserDetails = call myFunction data
-		Then print 'Function Returned User Data ===> ',UserDetails
+		* def numberOfUsers = call myFunction data
+		Then print 'Function Returned numberOfUsers ===> ',numberOfUsers
+		
+		* def myFunction1 = 
+		"""
+		function(arg){
+			return arg[0].id
+		}
+		"""
+		* def usersID = call myFunction1 data
+		Then print 'Function Returned usersID ===> ',usersID
 		

@@ -1,3 +1,4 @@
+@ignore
 Feature: Jenins Build Job Demo with Karate
 	
 	Background:

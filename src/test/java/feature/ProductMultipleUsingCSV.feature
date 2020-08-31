@@ -1,3 +1,4 @@
+@ignore
 Feature: scenario outline using a dynamic table from a csv file
 
   Background:

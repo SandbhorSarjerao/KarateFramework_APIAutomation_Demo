@@ -41,4 +41,8 @@ private static final Logger logger = LoggerFactory.getLogger(DbUtils.class);
     public void insertRow(final String sql) {
     	jdbc.batchUpdate(new String[] {sql});
     }
+    
+    public void deleteRow(final String sql) {
+    	jdbc.execute(sql);
+    }
 }

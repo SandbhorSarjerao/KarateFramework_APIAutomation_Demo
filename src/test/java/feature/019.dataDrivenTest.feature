@@ -12,6 +12,7 @@ Feature: Data Driven API Test
 #		And match response == {"status":"success","data":{"name":"test","salary":"123","age":"23","id":61}}
 		And print 'Response-1 ===> ',response
 		* def result = response
+		And print "ID ===>",result.data.id
 			
 		Given path '/api/v1/employee/' + result.data.id
 		When method GET

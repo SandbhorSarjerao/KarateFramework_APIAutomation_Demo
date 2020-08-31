@@ -1,3 +1,4 @@
+#@ignore
 Feature: Check returned Countries by API
 
 	Background:

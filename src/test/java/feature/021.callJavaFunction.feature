@@ -2,7 +2,7 @@
 Feature: Call Java Function
 
 	Scenario: Call Java Method
-		* def javaDemo = Java.type('feature.JavaFunctions.java')
+		* def javaDemo = Java.type('feature.JavaFunctions.java') 
 		* def result = new javaDemo().nonStaticFunction("*** World! ***")
 		Then print '*** Result-1 ===> ',result
 		
